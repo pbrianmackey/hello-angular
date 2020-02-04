@@ -8,7 +8,6 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./hero-list.component.scss']
 })
 export class HeroListComponent implements OnInit, OnDestroy {
-
   heroes: any;
   herosServiceSubscriber: Subscription;
 
