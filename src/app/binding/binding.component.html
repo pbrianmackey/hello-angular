@@ -1,0 +1,12 @@
+<div class="bindingContent">
+  <div>
+    <button [disabled]="isButtonDisabled">Simple Button With Property Binding</button>
+  </div>
+  <div>
+    <button class="eventBindingButton" (click)="onClick()">Event Binding Demo</button>
+  </div>
+  <div>
+    <input [(ngModel)]='loggedInUserName' />
+  </div>
+  <div>Logged In Username: {{loggedInUserName}}</div>
+</div>
