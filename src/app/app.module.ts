@@ -6,19 +6,24 @@ import { AppComponent } from './app.component';
 import { TableComponent } from './table/table.component';
 import { FormsModule } from '@angular/forms';
 import { BindingComponent } from './binding/binding.component';
+import { HeroListComponent } from './hero-list/hero-list.component';
+import { HerosService } from './heros.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     TableComponent,
-    BindingComponent
+    BindingComponent,
+    HeroListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HerosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
