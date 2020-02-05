@@ -9,13 +9,15 @@ import { BindingComponent } from './binding/binding.component';
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { HerosService } from './heros.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FeatureToggleDirective } from './feature-toggle.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     TableComponent,
     BindingComponent,
-    HeroListComponent
+    HeroListComponent,
+    FeatureToggleDirective
   ],
   imports: [
     BrowserModule,

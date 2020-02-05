@@ -1,9 +1,19 @@
 import { async, ComponentFixture, TestBed, getTestBed } from '@angular/core/testing';
 
 import { HeroListComponent } from './hero-list.component';
-import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { NO_ERRORS_SCHEMA, Input, Directive } from '@angular/core';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { HerosService } from '../heros.service';
+
+@Directive({
+  selector: '[improvingFeatureToggle]'
+})
+export class FeatureToggleDirectiveMock {
+  @Input() improvingFeatureToggle: string;
+  isEnabled() {
+      return true;
+  }
+}
 
 describe('HeroListComponent', () => {
   let component: HeroListComponent;
@@ -13,8 +23,8 @@ describe('HeroListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      declarations: [ HeroListComponent, FeatureToggleDirectiveMock ],
       imports: [HttpClientTestingModule],
-      declarations: [ HeroListComponent ],
       schemas: [ NO_ERRORS_SCHEMA ],
       providers: [HerosService]
     })

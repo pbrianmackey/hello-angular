@@ -1,7 +1,7 @@
 export const environment = {
-  production: true,
+  production: false,
   feature: {
     enableAll: false,
-    demo: false
+    demo: true
   }
 };

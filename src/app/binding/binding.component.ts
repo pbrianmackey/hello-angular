@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BindingComponent implements OnInit {
   loggedInUserName: string = 'Brian Mackey';
+  isButtonDisabled: boolean = true;
   constructor() { }
 
   ngOnInit() {
