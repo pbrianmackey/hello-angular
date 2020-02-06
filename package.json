@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "testAll": "ng test --watch=false && ng e2e"
+    "testall": "ng test --watch=false && ng e2e",
+    "installclean": "find . -name \"node_modules\" -exec rm -rf '{}' + && npm install"
   },
   "private": true,
   "dependencies": {
