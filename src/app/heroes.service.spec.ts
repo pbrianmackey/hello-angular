@@ -1,19 +1,19 @@
 import { TestBed, getTestBed } from '@angular/core/testing';
 
-import { HerosService } from './heros.service';
+import { HeroesService } from './heroes.service';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
 describe('HerosService', () => {
   let injector: TestBed;
-  let service: HerosService;
+  let service: HeroesService;
   let httpMock: HttpTestingController;
   
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
-      providers: [HerosService]});
+      providers: [HeroesService]});
     injector = getTestBed();
-    service = injector.get(HerosService);
+    service = injector.get(HeroesService);
     httpMock = injector.get(HttpTestingController);
   });
 

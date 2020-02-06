@@ -6,7 +6,7 @@ import { map } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-export class HerosService {
+export class HeroesService {
 
   url = 'http://localhost:3000'
   constructor(private http: HttpClient) { }

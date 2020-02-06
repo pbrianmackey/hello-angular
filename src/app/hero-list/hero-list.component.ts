@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { HerosService } from '../heros.service';
+import { HeroesService } from '../heroes.service';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -11,7 +11,7 @@ export class HeroListComponent implements OnInit, OnDestroy {
   heroes: any;
   herosServiceSubscriber: Subscription;
 
-  constructor(private herosService: HerosService) { }
+  constructor(private herosService: HeroesService) { }
 
   ngOnInit() {
     this.herosServiceSubscriber = this.herosService.getAll().subscribe(result => {

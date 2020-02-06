@@ -7,10 +7,11 @@ import { TableComponent } from './table/table.component';
 import { FormsModule } from '@angular/forms';
 import { BindingComponent } from './binding/binding.component';
 import { HeroListComponent } from './hero-list/hero-list.component';
-import { HerosService } from './heros.service';
+import { HeroesService } from './heroes.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FeatureToggleDirective } from './feature-toggle.directive';
 import { BorderDirective } from './border.directive';
+import { AdvancedCourseComponent } from './advanced-course/advanced-course.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BorderDirective } from './border.directive';
     BindingComponent,
     HeroListComponent,
     FeatureToggleDirective,
-    BorderDirective
+    BorderDirective,
+    AdvancedCourseComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,7 @@ import { BorderDirective } from './border.directive';
     FormsModule,
     HttpClientModule
   ],
-  providers: [HerosService],
+  providers: [HeroesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

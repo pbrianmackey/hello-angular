@@ -1,6 +1,17 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { Input, Directive } from '@angular/core';
+
+@Directive({
+  selector: '[improvingFeatureToggle]'
+})
+export class FeatureToggleDirectiveMock {
+  @Input() improvingFeatureToggle: string;
+  isEnabled() {
+      return true;
+  }
+}
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -9,7 +20,8 @@ describe('AppComponent', () => {
         RouterTestingModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        FeatureToggleDirectiveMock
       ],
     }).compileComponents();
   }));

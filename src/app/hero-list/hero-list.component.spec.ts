@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed, getTestBed } from '@angular/core/test
 import { HeroListComponent } from './hero-list.component';
 import { NO_ERRORS_SCHEMA, Input, Directive } from '@angular/core';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { HerosService } from '../heros.service';
+import { HeroesService } from '../heroes.service';
 
 @Directive({
   selector: '[improvingFeatureToggle]'
@@ -18,7 +18,7 @@ export class FeatureToggleDirectiveMock {
 describe('HeroListComponent', () => {
   let component: HeroListComponent;
   let fixture: ComponentFixture<HeroListComponent>;
-  let service: HerosService;
+  let service: HeroesService;
   let injector: TestBed;
 
   beforeEach(async(() => {
@@ -26,11 +26,11 @@ describe('HeroListComponent', () => {
       declarations: [ HeroListComponent, FeatureToggleDirectiveMock ],
       imports: [HttpClientTestingModule],
       schemas: [ NO_ERRORS_SCHEMA ],
-      providers: [HerosService]
+      providers: [HeroesService]
     })
     .compileComponents();
     injector = getTestBed();
-    service = injector.get(HerosService);
+    service = injector.get(HeroesService);
   }));
 
   beforeEach(() => {

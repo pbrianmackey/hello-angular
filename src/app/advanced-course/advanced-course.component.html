@@ -1,0 +1,7 @@
+<p>advanced-course works!</p>
+
+<ul *ngIf="heroes$ | async as heroes">
+    <li *ngFor="let hero of heroes">
+        {{ hero.Name }}
+    </li>
+</ul>
