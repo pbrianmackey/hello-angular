@@ -10,8 +10,8 @@ import { Observable } from 'rxjs';
 export class AdvancedCourseComponent implements OnInit {
   heroes$: Observable<any>;
 
-  constructor(private herosService: HeroesService) { 
-    this.heroes$ = herosService.getAll();
+  constructor(private heroesService: HeroesService) { 
+    this.heroes$ = heroesService.getAll();
   }
 
   ngOnInit() {
