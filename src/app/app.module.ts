@@ -9,9 +9,9 @@ import { BindingComponent } from './binding/binding.component';
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { HeroesService } from './heroes.service';
 import { HttpClientModule } from '@angular/common/http';
-import { FeatureToggleDirective } from './feature-toggle.directive';
 import { BorderDirective } from './border.directive';
 import { AdvancedCourseComponent } from './advanced-course/advanced-course.component';
+import { SharedModule } from './shared.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,6 @@ import { AdvancedCourseComponent } from './advanced-course/advanced-course.compo
     TableComponent,
     BindingComponent,
     HeroListComponent,
-    FeatureToggleDirective,
     BorderDirective,
     AdvancedCourseComponent
   ],
@@ -27,7 +26,8 @@ import { AdvancedCourseComponent } from './advanced-course/advanced-course.compo
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule
   ],
   providers: [HeroesService],
   bootstrap: [AppComponent]

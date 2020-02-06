@@ -7,7 +7,7 @@ export const environment = {
   feature: {
     enableAll: false,
     demo: true,
-    advancedCourseContent: true
+    advancedCourseContent: true 
   }
 };
 
