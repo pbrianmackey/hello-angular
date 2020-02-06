@@ -10,6 +10,7 @@ import { HeroListComponent } from './hero-list/hero-list.component';
 import { HerosService } from './heros.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FeatureToggleDirective } from './feature-toggle.directive';
+import { BorderDirective } from './border.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FeatureToggleDirective } from './feature-toggle.directive';
     TableComponent,
     BindingComponent,
     HeroListComponent,
-    FeatureToggleDirective
+    FeatureToggleDirective,
+    BorderDirective
   ],
   imports: [
     BrowserModule,
