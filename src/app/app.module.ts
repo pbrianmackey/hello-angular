@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BorderDirective } from './border.directive';
 import { AdvancedCourseComponent } from './advanced-course/advanced-course.component';
 import { SharedModule } from './shared.module';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SharedModule } from './shared.module';
     BindingComponent,
     HeroListComponent,
     BorderDirective,
-    AdvancedCourseComponent
+    AdvancedCourseComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
