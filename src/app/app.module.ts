@@ -13,6 +13,7 @@ import { BorderDirective } from './border.directive';
 import { AdvancedCourseComponent } from './advanced-course/advanced-course.component';
 import { SharedModule } from './shared.module';
 import { LoginComponent } from './login/login.component';
+import { AdvancedCourseModule } from './advanced-course/advanced-course.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { LoginComponent } from './login/login.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
+    AdvancedCourseModule
   ],
   providers: [HeroesService],
   bootstrap: [AppComponent]
