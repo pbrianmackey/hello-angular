@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'improving-login',
+  selector: 'mackey-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })

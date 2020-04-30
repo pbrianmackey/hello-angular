@@ -2,10 +2,10 @@ import { Directive, Input, TemplateRef, ViewContainerRef, OnInit } from '@angula
 import { environment } from '../environments/environment';
 
 @Directive({
-  selector: '[improvingFeatureToggle]'
+  selector: '[mackeyFeatureToggle]'
 })
 export class FeatureToggleDirective implements OnInit {
-  @Input() improvingFeatureToggle: string;
+  @Input() mackeyFeatureToggle: string;
 
   constructor(
     private templateRef: TemplateRef<any>,
@@ -25,6 +25,6 @@ export class FeatureToggleDirective implements OnInit {
       return true;
     }
 
-    return environment.feature[this.improvingFeatureToggle];
+    return environment.feature[this.mackeyFeatureToggle];
   }
 }

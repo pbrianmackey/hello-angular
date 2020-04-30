@@ -3,7 +3,7 @@ import { TestBed, getTestBed } from '@angular/core/testing';
 import { HeroesService } from './heroes.service';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
-describe('HerosService', () => {
+describe('HeroesService', () => {
   let injector: TestBed;
   let service: HeroesService;
   let httpMock: HttpTestingController;

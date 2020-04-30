@@ -1,7 +1,7 @@
 import { Directive, ElementRef } from '@angular/core';
 
 @Directive({
-  selector: '[improvingBorder]'
+  selector: '[mackeyBorder]'
 })
 export class BorderDirective {
 

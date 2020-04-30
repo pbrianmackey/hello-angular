@@ -4,10 +4,10 @@ import { AppComponent } from './app.component';
 import { Input, Directive } from '@angular/core';
 
 @Directive({
-  selector: '[improvingFeatureToggle]'
+  selector: '[mackeyFeatureToggle]'
 })
 export class FeatureToggleDirectiveMock {
-  @Input() improvingFeatureToggle: string;
+  @Input() mackeyFeatureToggle: string;
   isEnabled() {
       return true;
   }

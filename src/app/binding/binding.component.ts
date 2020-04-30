@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'improving-binding',
+  selector: 'mackey-binding',
   templateUrl: './binding.component.html',
   styleUrls: ['./binding.component.scss']
 })

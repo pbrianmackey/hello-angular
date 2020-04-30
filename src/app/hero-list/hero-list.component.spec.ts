@@ -6,10 +6,10 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { HeroesService } from '../heroes.service';
 
 @Directive({
-  selector: '[improvingFeatureToggle]'
+  selector: '[mackeyFeatureToggle]'
 })
 export class FeatureToggleDirectiveMock {
-  @Input() improvingFeatureToggle: string;
+  @Input() mackeyFeatureToggle: string;
   isEnabled() {
       return true;
   }

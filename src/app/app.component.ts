@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'improving-root',
+  selector: 'mackey-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

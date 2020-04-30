@@ -3,7 +3,7 @@ import { TestBed, async, ComponentFixture } from '@angular/core/testing';
 import { BorderDirective } from './border.directive';
 
 @Component({
-  template: '<div improvingBorder>I am glob!</div>'
+  template: '<div mackeyBorder>I am glob!</div>'
 })
 class TestComponent {
   constructor() { }

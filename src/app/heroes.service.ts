@@ -13,12 +13,12 @@ export class HeroesService {
   constructor(private http: HttpClient) { }
 
   get(id: Number): Observable<Hero> {
-    return this.http.get<Hero>(this.url + "/heros" + "/" + id)
+    return this.http.get<Hero>(this.url + "/heroes" + "/" + id)
             .pipe(map(response => response));
   }
 
   getAll(): Observable<Hero[]> {
-    return this.http.get<Hero[]>(this.url + "/heros" + "?_sort=id&order=desc")
+    return this.http.get<Hero[]>(this.url + "/heroes")
             .pipe(map(response => response));
   }
 }

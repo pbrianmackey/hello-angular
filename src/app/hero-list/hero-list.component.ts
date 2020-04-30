@@ -3,23 +3,23 @@ import { HeroesService } from '../heroes.service';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'improving-hero-list',
+  selector: 'mackey-hero-list',
   templateUrl: './hero-list.component.html',
   styleUrls: ['./hero-list.component.scss']
 })
 export class HeroListComponent implements OnInit, OnDestroy {
   heroes: any;
-  herosServiceSubscriber: Subscription;
+  heroesServiceSubscriber: Subscription;
 
-  constructor(private herosService: HeroesService) { }
+  constructor(private heroesService: HeroesService) { }
 
   ngOnInit() {
-    this.herosServiceSubscriber = this.herosService.getAll().subscribe(result => {
+    this.heroesServiceSubscriber = this.heroesService.getAll().subscribe(result => {
       this.heroes = result;
     });
   }
 
   ngOnDestroy() {
-    this.herosServiceSubscriber.unsubscribe();
+    this.heroesServiceSubscriber.unsubscribe();
   }
 }
