@@ -14,6 +14,7 @@ import { AdvancedCourseComponent } from './advanced-course/advanced-course.compo
 import { SharedModule } from './shared.module';
 import { LoginComponent } from './login/login.component';
 import { AdvancedCourseModule } from './advanced-course/advanced-course.module';
+import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AdvancedCourseModule } from './advanced-course/advanced-course.module';
     HeroListComponent,
     BorderDirective,
     AdvancedCourseComponent,
-    LoginComponent
+    LoginComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,

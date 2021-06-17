@@ -1,5 +1,9 @@
 <ul>
     <li *ngFor="let hero of heroes">
-        {{ hero.Name }}
+        <a [routerLink]="['/hero', hero.id]">
+            {{ hero.Name }}
+        </a>
     </li>
 </ul>
+
+<router-outlet></router-outlet>

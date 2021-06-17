@@ -4,13 +4,16 @@ import { TableComponent } from './table/table.component';
 import { BindingComponent } from './binding/binding.component';
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { LoginComponent } from './login/login.component';
+import { HeroComponent } from './hero/hero.component';
 
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'table', component: TableComponent },
   { path: 'binding', component: BindingComponent },
-  { path: 'hero-list', component: HeroListComponent }
+  { path: 'hero-list', component: HeroListComponent },
+  { path: 'hero/:id', component: HeroComponent },
+
 ];
 
 @NgModule({
