@@ -17,7 +17,7 @@ export class HeroComponent implements OnInit, OnDestroy {
     ) { }
   
   ngOnInit(): void {
-    const heroId = Number(this.route.snapshot.paramMap.get('id'));
+    const heroId = +this.route.snapshot.paramMap.get('id');
     this.heroesServiceSubscriber = this.heroesService.get(heroId).subscribe(result => {
       this.hero = result;
     });
