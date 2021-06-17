@@ -9,6 +9,11 @@
           "id": 2,
           "Name": "Izuku Midoriya",
           "DOB": "July 15, 2005"
+      },
+      {
+          "id": 3,
+          "Name": "Endeavor",
+          "DOB": "December 15, 1978"
       }
   ],
   "villains": [
