@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { BindingComponent } from './binding.component';
 import { FormsModule } from '@angular/forms';
@@ -7,7 +7,7 @@ describe('BindingComponent', () => {
   let component: BindingComponent;
   let fixture: ComponentFixture<BindingComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [FormsModule],
       declarations: [ BindingComponent ]

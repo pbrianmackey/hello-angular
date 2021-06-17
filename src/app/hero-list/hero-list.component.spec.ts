@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed, getTestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, getTestBed, waitForAsync } from '@angular/core/testing';
 
 import { HeroListComponent } from './hero-list.component';
 import { NO_ERRORS_SCHEMA, Input, Directive } from '@angular/core';
@@ -21,7 +21,7 @@ describe('HeroListComponent', () => {
   let service: HeroesService;
   let injector: TestBed;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ HeroListComponent, FeatureToggleDirectiveMock ],
       imports: [HttpClientTestingModule],
